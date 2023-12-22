@@ -1,4 +1,4 @@
-Explicit HTTP Profileの作成
+1.5 Explicit HTTP Profileの作成
 ======================================
 
 1. 「Local Traffic」→「Profiles」→「Services」→「HTTP」で表示された画面の右上にある「Create」ボタンをクリックします。
