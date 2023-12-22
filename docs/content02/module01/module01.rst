@@ -6,7 +6,8 @@
 1. Office365宛通信 
 
 .. figure:: images/Picture1.jpg
-
+   :scale: 50%
+   :align: center
 
 ※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録。
 
@@ -25,7 +26,8 @@
 2. 通常Webサイト宛通信
 
 .. figure:: images/Picture2.jpg
-
+   :scale: 50%
+   :align: center
 
 ※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録
 
