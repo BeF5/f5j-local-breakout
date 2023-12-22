@@ -8,7 +8,7 @@
 .. figure:: images/Picture1.jpg
 
 
-A)	公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録。
+※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録。
 
 
 1. クライアントPCのWebブラウザに、URL：https://login.microsoftonline.comを入力
@@ -27,7 +27,7 @@ A)	公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録�
 .. figure:: images/Picture2.jpg
 
 
-A)	公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録
+※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録
 
 
 1. クライアントがWebブラウザに、URL：https://f5.comを入力。
