@@ -111,7 +111,7 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
 
 .. code-block:: cmdin
 
-when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベント発生
+   when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベント発生
 
    log local0. "[HTTP::method] [HTTP::host] [HTTP::uri]"		#ログ出力
 
