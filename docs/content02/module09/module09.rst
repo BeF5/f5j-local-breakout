@@ -67,13 +67,9 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
 .. code-block:: cmdin
 
    (tmos)# create sys file data-group ext_o365_url_object type string source-path file:/var/tmp/o365_url_v2
-
    Copying file "file:/var/tmp/o365_url_v2" ...
-
      % Total    % Received % Xferd  Average Speed  Time　Time 　Time	Current
-
                                     Dload  Upload  Total　Spent   Left	Speed
-
    100  8701  100  8701   0    0  12.0M      0　　--:--:--　--:--:--　--:--:--     0
 
 
