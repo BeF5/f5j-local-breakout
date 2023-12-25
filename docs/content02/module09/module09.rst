@@ -137,25 +137,19 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
 
    .. code-block:: cmdin
 
-switch [HTTP::host] {							#下記に列挙されるHTTPホストヘッダを比較
-   "login.microsoftonline.com" {
-      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" }	#HTTPヘッダを挿入
+      switch [HTTP::host] {							#下記に列挙されるHTTPホストヘッダを比較
+         "login.microsoftonline.com" {
+            HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" }	#HTTPヘッダを挿入
+            HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
 
-      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+         "login.microsoft.com" {
+            HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+            HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
 
-   "login.microsoft.com" {
-
-      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
-
-      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
-
-   "login.windows.net" {
-
-      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
-
-      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
-
-　}
+         "login.windows.net" {
+            HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+            HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+      }
 
 ※ ログ出力の部分は動作確認終了後に削除を忘れないよう注意するか、HighSpeedLogging等の負荷を考慮したログ設計を実装願います。
 
