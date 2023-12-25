@@ -20,7 +20,6 @@ tmshで 以下のコマンドを実行することで、Data-Groupへ反映で�
    :align: center
 
 
-
 2. 正常に更新されているかを以下コマンドで確認します。
 
 “last-update-time“ が更新されていることを確認します。
@@ -33,5 +32,4 @@ tmshで 以下のコマンドを実行することで、Data-Groupへ反映で�
 .. figure:: images/Picture2.png
    :scale: 50%
    :align: center
-
 
