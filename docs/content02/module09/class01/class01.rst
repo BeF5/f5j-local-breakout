@@ -29,17 +29,18 @@
 
 <アドレスサンプル>
 
-   - .. image:: ./images/Picture1.png
-       :width: 400
-
+.. figure:: images/Picture1.png
+   :scale: 50%
+   :align: center
 
    ファイルを保存するディレクトリはどこでも問題ありませんが、本書では、/var/tmp ディレクトリに保存します。
 
 また、本書ではファイル名「o365_url_v2」として保存しています。
 
 
-   - .. image:: ./images/Picture2.png
-       :width: 400
+.. figure:: images/Picture2.png
+   :scale: 50%
+   :align: center
 
 
 2. 作成した外部ファイルの読み込み
