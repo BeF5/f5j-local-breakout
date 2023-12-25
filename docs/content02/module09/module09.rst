@@ -21,13 +21,11 @@
 
 
 
-- External Data-Group用ファイルの作成
+1. External Data-Group用ファイルの作成
 
+   BIG-IPのHost側(Linux側)に、Data-Group用の外部ファイルを保存します。
 
-1. BIG-IPのHost側(Linux側)に、Data-Group用の外部ファイルを保存
-
-
-    事前にエディタ等を用いて公開されているアドレスをBIG-IPで利用可能な形に整形しておきます。
+   事前にエディタ等を用いて公開されているアドレスをBIG-IPで利用可能な形に整形しておきます。
 
 
 .. NOTE::
