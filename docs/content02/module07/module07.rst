@@ -18,3 +18,8 @@
 .. figure:: images/Picture2-2.png
    :scale: 50%
    :align: center
+
+
+.. figure:: images/Picture2-3.png
+   :scale: 50%
+   :align: center
