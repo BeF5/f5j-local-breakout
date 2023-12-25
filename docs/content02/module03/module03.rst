@@ -3,7 +3,7 @@
 
 BIG-IPのGUIにログインします。
 
-1. 「Local Traffic」 → 「Pools」で表示された画面の右上にある「Create」ボタンをクリックします。
+1. 「Local Traffic」 → 「Pools」で表示された画面の右上にある\ ``Create``\ ボタンをクリックします。
 
 
 .. figure:: images/Picture1.png
@@ -12,7 +12,7 @@ BIG-IPのGUIにログインします。
 
 
 
-2. 必要内容を入力し、「Finished」ボタンをクリックします。
+2. 必要内容を入力し、\ ``Finished``\ ボタンをクリックします。
 
 .. figure:: images/Picture2.png
    :scale: 50%
