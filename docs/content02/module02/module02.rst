@@ -3,7 +3,7 @@
 
 本書においてはOne-Arm構成にて構築することを前提に記載しております。
 
-- One-Arm
+- One-Arm構成例
 
 
 .. figure:: images/Picture1.jpg
@@ -11,7 +11,7 @@
    :align: center
 
 
-- Two-Arm
+- Two-Arm構成例
 
 
 .. figure:: images/Picture2.jpg
