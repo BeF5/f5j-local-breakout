@@ -10,7 +10,12 @@
 
 2. 必要内容を入力し、「DNS Resolver」の横のボックスへチェックし、「＋」をクリックします。
 
-.. figure:: images/Picture2.png
+.. figure:: images/Picture2-1.png
+   :scale: 50%
+   :align: center
+
+
+.. figure:: images/Picture2-2.png
    :scale: 50%
    :align: center
 
@@ -24,7 +29,11 @@
 
 4. 「DNS Resolver」が入力されていることを確認し、「Tunnel Name」にて作成したTunnelを選択した後、「Finished」をクリックします。
 
-.. figure:: images/Picture4.png
+.. figure:: images/Picture4-1.png
+   :scale: 50%
+   :align: center
+
+.. figure:: images/Picture4-2.png
    :scale: 50%
    :align: center
 
