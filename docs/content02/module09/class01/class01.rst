@@ -29,7 +29,7 @@
 
 <アドレスサンプル>
 
-   - .. image:: ./images/Picture1.jpg
+   - .. image:: ./images/Picture1.png
        :width: 400
 
 
@@ -38,7 +38,7 @@
 また、本書ではファイル名「o365_url_v2」として保存しています。
 
 
-   - .. image:: ./images/Picture2.jpg
+   - .. image:: ./images/Picture2.png
        :width: 400
 
 
