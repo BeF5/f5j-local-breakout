@@ -1,14 +1,13 @@
-1.9 Office365判別用iRuleの作成とVSへの割り当て
+1.9 O365判別用iRuleの作成とVSへの割り当て
 ======================================
 
-本項ではMicrosoft社にて公開されている情報を元にOffice365の関連アドレスをExternal Data-GroupでマッチングさせるiRuleを作成し、Virtual Serverへと適用します。
+  本項ではMicrosoft社にて公開されている情報を元にO365の関連アドレスをExternal Data-GroupでマッチングさせるiRuleを作成し、Virtual Serverへと適用します。
 
    インターネット上で公開されているものを本書では手動で取り込み、BIG-IP向けに加工・成型して取り込みを行っているため、公開もとの情報に関してはMicrosoft社へお問合せ願います。
 
 
 .. NOTE::
-  Office 365 の URL と IP アドレスの範囲（MicroSoft社ページ） (2023/12時点)
-
+  O365のURLとIPアドレスの範囲（MicroSoft社ページ） (2023/12時点)
 
      https://learn.microsoft.com/ja-jp/microsoft-365/enterprise/urls-and-ip-address-ranges
 
@@ -18,7 +17,6 @@
    なお、iCallにより手動取り込みではなく、スケジュールベースでの自動取り込みにもBIG-IPは対応可能です。
 
    iRuleやExternal Data-Groupの利用について詳細は「iRulesかんたんセットアップガイド」をご参照下さい。
-
 
 
 1. External Data-Group用ファイルの作成
@@ -31,11 +29,9 @@
 .. NOTE::
    公開情報はいくつか注意点に伴い登録情報の作成と運用方針の決定が必要となります。
 
-   ・大文字だがアクセスは小文字などの差分修正
-
-   ・「equivioprod*.cloudapp.net」などの文字列内に「*」がある場合の登録方針
-
-   ・公開情報への反映前に発生する実アクセス先に対する方針
+   - 大文字だがアクセスは小文字などの差分修正
+   - 「equivioprod*.cloudapp.net」などの文字列内に「*」がある場合の登録方針
+   - 公開情報への反映前に発生する実アクセス先に対する方針
 
    例) 2016/7/4時点はSkypeに関する公開情報では以下のアクセス先が登録されていないが実アクセスあり
 
