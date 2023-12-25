@@ -19,7 +19,7 @@ F5のオフィシャルなドキュメントはこちらにございます。
 - Inline型ではなくExplicit型のProxyとしての利用
 - ラボ作成時の最新バージョンであるBIG-IP LTM v17.1.1をベースに本書を作成
 - BIG-IPにDNSの設定含め基本設定が終わっている
-- BIg-IP LTMの基礎知識を学習する場合は以下をご参照ください。
+- BIG-IP LTMの基礎知識を学習する場合は以下をご参照ください。
    - `BIG-IP Local Traffic Manager (LTM) v17.1 簡単セットアップガイド <https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/>`__ 
 
 
