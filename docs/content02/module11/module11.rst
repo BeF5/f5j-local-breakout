@@ -8,7 +8,7 @@ External Data-Groupの外部ファイル、本書における「o365_url_v2」�
 
 1. 修正後の外部ファイルをExternal Data-Groupへ反映します。
 
-tmshで 以下のコマンドを実行することで、Data-Groupへ反映できます。
+   tmshで 以下のコマンドを実行することで、Data-Groupへ反映できます。
 
 .. code-block:: cmdin
 
@@ -22,7 +22,7 @@ tmshで 以下のコマンドを実行することで、Data-Groupへ反映で�
 
 2. 正常に更新されているかを以下コマンドで確認します。
 
-“last-update-time“ が更新されていることを確認します。
+   “last-update-time“ が更新されていることを確認します。
 
 .. code-block:: cmdin
 
