@@ -26,7 +26,7 @@
 2. 通常Webサイト宛通信
 
 .. figure:: images/Picture2.jpg
-   :scale: 10%
+   :scale: 30%
    :align: center
 
 
