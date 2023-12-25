@@ -26,9 +26,8 @@
 2. 通常Webサイト宛通信
 
 .. figure:: images/Picture2.jpg
+   :scale: 50%
    :align: center
-
-※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録
 
 
 1. クライアントPCのWebブラウザに、URL例：`https://f5.com <https://f5.com/>`_ を入力
