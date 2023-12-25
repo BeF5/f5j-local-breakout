@@ -20,9 +20,7 @@ F5のオフィシャルなドキュメントはこちらにございます。
 - BIG-IP LTM v17.1
 - BIG-IPにDNSの設定含め基本設定が終わっている
 - BIg-IP LTMの基礎知識を学習する場合は以下をご参照ください。
-   - BIG-IP Local Traffic Manager (LTM) v17.1 簡単セットアップガイド
-     
-     https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/
+   - `BIG-IP Local Traffic Manager (LTM) v17.1 簡単セットアップガイド <https://f5j-easy-setup-ltm-17.readthedocs.io/ja/latest/>`__ 
 
 .. note::
   - 本書で設定されているパラメータは実構築環境でも同様とは限りません。
