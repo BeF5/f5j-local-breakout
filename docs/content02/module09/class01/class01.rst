@@ -65,8 +65,61 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
 ~~~~~~~~
 
 
+.. figure:: images/Picture3.png
+   :scale: 50%
+   :align: center
 
 
+4. 任意の名前を入力し、Typeを「External File」、File Nameを「ext_o365_url_object」として「Finished」ボタンを押します。
+~~~~~~~~
+
+
+.. figure:: images/Picture4.png
+   :scale: 50%
+   :align: center
+
+
+5. 「Local Traffic」→「iRules」→「iRules List」で表示された画面の右上にある「Create」ボタンを押します。
+~~~~~~~~
+
+
+.. figure:: images/Picture5.png
+   :scale: 50%
+   :align: center
+
+
+6. 下記iRuleを参考にし、「Finished」ボタンを押します。
+~~~~~~~~
+
+
+.. figure:: images/Picture6.png
+   :scale: 50%
+   :align: center
+
+
+.. code-block:: cmdin
+
+when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベント発生
+
+   log local0. "[HTTP::method] [HTTP::host] [HTTP::uri]"		#ログ出力
+
+   if { [class match [HTTP::host] contains ext_o365_url] } {		#HOSTヘッダとExternal Data-Groupをマッチング
+
+      HTTP::proxy enable						#HTTP Proxyを有効化
+
+      log local0. "* BIGIP *"					#* BIGIP *ログ出力
+
+   } else {
+
+      HTTP::proxy disable						#HTTP Proxyを無効化
+
+      log local0. "* Web Proxy *"					#* Web Proxy *ログ出力
+
+      pool webproxy_pool						#Poolを指定
+
+   }
+
+}
 
 
 
