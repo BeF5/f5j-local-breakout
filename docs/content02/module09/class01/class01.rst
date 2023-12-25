@@ -134,21 +134,63 @@ when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベ�
    <テナント制限向けサンプル>
 
    .. code-block:: cmdin
+
 switch [HTTP::host] {							#下記に列挙されるHTTPホストヘッダを比較
-"login.microsoftonline.com" {
-HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" }	#HTTPヘッダを挿入
-HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
-"login.microsoft.com" {
-HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
-HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
-"login.windows.net" {
-HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
-HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+   "login.microsoftonline.com" {
+      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" }	#HTTPヘッダを挿入
+
+      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+
+   "login.microsoft.com" {
+
+      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+
+      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+
+   "login.windows.net" {
+
+      HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+
+      HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+
 　}
 
+※ ログ出力の部分は動作確認終了後に削除を忘れないよう注意するか、HighSpeedLogging等の負荷を考慮したログ設計を実装願います。
+
+
+7. 「Local Traffic」→「Virtual Servers」で表示された画面の右上にある「proxy_http_vs」をクリックします。
+~~~~~~~~
+
+
+.. figure:: images/Picture7.png
+   :scale: 50%
+   :align: center
+
+
+8. 「Resources」タブをクリックし、「iRules」の横の「Manage」ボタンを押します。
+~~~~~~~~
+
+
+.. figure:: images/Picture8.png
+   :scale: 50%
+   :align: center
+
+
+9. 作成したiRuleを割り当てて「Finished」ボタンを押します。
+~~~~~~~~
+
+
+.. figure:: images/Picture9.png
+   :scale: 50%
+   :align: center
 
 
 
+10. iRuleが割り当たったことを確認しBIG-IP側の作業を終了します
+~~~~~~~~
 
 
+.. figure:: images/Picture10.png
+   :scale: 50%
+   :align: center
 
