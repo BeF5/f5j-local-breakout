@@ -122,6 +122,29 @@ when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベ�
 }
 
 
+.. NOTE::
+   Office365関連のテナント制限に関する機能を利用時はvirtual Server [proxy_https_vs] 側でHTTP headerの追加が必要。
+
+   その際はVirtual ServerのTypeをStandardに変更するなどSSLを復号、再暗号化するための追加設定が必要となります。
+
+   また、別途SSL Forward Proxyライセンスも必要となります。
+
+   マッチング対象となるHTTPホストヘッダはMicrosoft社へご確認下さい。
+
+   <テナント制限向けサンプル>
+
+   .. code-block:: cmdin
+switch [HTTP::host] {							#下記に列挙されるHTTPホストヘッダを比較
+"login.microsoftonline.com" {
+HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" }	#HTTPヘッダを挿入
+HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+"login.microsoft.com" {
+HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+"login.windows.net" {
+HTTP::header insert "Restrict-Access-To-Tenants" "固有ドメイン" } 	#HTTPヘッダを挿入
+HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
+　}
 
 
 
