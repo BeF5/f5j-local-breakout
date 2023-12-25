@@ -147,6 +147,7 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
             HTTP::header insert "Restrict-Access-Context" "AzureAD ID" }	#HTTPヘッダを挿入
       }
 
+
    ※ ログ出力の部分は動作確認終了後に削除を忘れないよう注意するか、HighSpeedLogging等の負荷を考慮したログ設計を実装願います。
 
 
