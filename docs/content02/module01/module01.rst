@@ -12,7 +12,7 @@
 ※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録。
 
 
-1. クライアントPCのWebブラウザに、URL：https://login.microsoftonline.comを入力
+1. クライアントPCのWebブラウザに、URL：`https://login.microsoftonline.com <https://login.microsoftonline.com/>`_ を入力
 2. クライアントPCは、WebブラウザのProxy設定に従いBIG-IPへHTTPリクエストを送信
 3. iRuleによりData-Groupと比較しO365関連アドレスか否かを判別し、O365関連アドレスであればBIG-IPをProxyとするiRuleコマンドを実施
 4. login.microsoftonline.comのIPアドレスを解決するためにDNSクエリを送信
