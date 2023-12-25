@@ -3,13 +3,13 @@
 
 本ソリューションは、以下のような流れで動作します。
 
-1. Office365宛通信 
+1. O365宛通信 
 
 .. figure:: images/Picture1.jpg
    :scale: 50%
    :align: center
 
-※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録。
+※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録。
 
 
 1. クライアントPCのWebブラウザに、URL：https://login.microsoftonline.comを入力
@@ -29,7 +29,7 @@
    :scale: 50%
    :align: center
 
-※ 公開情報からOffice365関連アドレスをBIG-IPのData-Groupへ登録
+※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録
 
 
 1. クライアントがWebブラウザに、URL：https://f5.comを入力。
