@@ -12,7 +12,7 @@ BIG-IPのGUIにログインします。
 
 
 
-2. 必要内容を入力し、\ ``Finished``\ ボタンをクリックします。
+2. 赤枠の必要内容を入力し、\ ``Finished``\ ボタンをクリックします。
 
 .. figure:: images/Picture2.png
    :scale: 50%
