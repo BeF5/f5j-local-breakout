@@ -22,7 +22,9 @@
 
 
 4. 「Name」へ任意のドメイン名をFQDN形式で入力し、「Address」へDNSのIPを入力します。
+
    その後、「Finished」をクリックします。
+
    ※本書では指定が無いため「Name」部分を ”.（ドット）” と指定しています。
 
 .. figure:: images/Picture4.png
