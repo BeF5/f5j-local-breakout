@@ -32,19 +32,13 @@
 ※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録
 
 
-1. クライアントがWebブラウザに、URL例：`https://f5.com <https://f5.com/>`_ を入力。
+1. クライアントPCのWebブラウザに、URL例：`https://f5.com <https://f5.com/>`_ を入力
 2. クライアントPCは、WebブラウザのProxy設定に従いBIG-IPへHTTPリクエストを送信
-3. iRuleによりData-Groupと比較しO365関連アドレスか否かを判別し、O365関連アドレスに含まれていなければiRuleコマンドによりWeb Proxyが含まれたPoolを選定
+3. iRuleによりData-Groupと比較しO365関連アドレスか否かを判別し、O365関連アドレスに含まれていなければiRuleによりWeb Proxyが含まれたPoolを選定
 4. 選定されたPoolの中から1台を選定し、Web Proxy宛に通信を転送
 5. Web ProxyからO365宛にHTTPリクエストを送信
 6. O365はHTTPリクエストに対するHTTPレスポンスを送信
 7. HTTPレスポンスを受け取ったWeb ProxyはHTTPレスポンスをBIG-IPへ転送
 8. BIG-IPはクライアントPCへそれを転送
 9. f5.comのWeb画面が表示される
-
-
-
-
-
-
 
