@@ -170,7 +170,7 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
    :align: center
 
 
-9. 作成したiRuleを割り当て、\ ``Finished``\ をクリックします。。
+9. 作成したiRuleを割り当て、\ ``Finished``\ をクリックします。
 
 
 .. figure:: images/Picture9.png
