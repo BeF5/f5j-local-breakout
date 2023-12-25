@@ -112,25 +112,15 @@ tmshで 以下のコマンドで、外部ファイルをオブジェクトとし
 .. code-block:: cmdin
 
    when HTTP_PROXY_REQUEST {					#Proxyリクエスを受け取ったときイベント発生
-
       log local0. "[HTTP::method] [HTTP::host] [HTTP::uri]"		#ログ出力
-
       if { [class match [HTTP::host] contains ext_o365_url] } {		#HOSTヘッダとExternal Data-Groupをマッチング
-
          HTTP::proxy enable						#HTTP Proxyを有効化
-
          log local0. "* BIGIP *"					#* BIGIP *ログ出力
-
       } else {
-
          HTTP::proxy disable						#HTTP Proxyを無効化
-
          log local0. "* Web Proxy *"					#* Web Proxy *ログ出力
-
          pool webproxy_pool						#Poolを指定
-
       }
-
    }
 
 
