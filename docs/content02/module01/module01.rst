@@ -26,7 +26,6 @@
 2. 通常Webサイト宛通信
 
 .. figure:: images/Picture2.jpg
-   :scale: 50%
    :align: center
 
 ※ 公開情報からO365関連アドレスをBIG-IPのData-Groupへ登録
