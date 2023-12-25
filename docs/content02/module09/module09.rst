@@ -21,7 +21,7 @@
 
 
 
-External Data-Group用ファイルの作成
+- External Data-Group用ファイルの作成
 
 
 1. BIG-IPのHost側(Linux側)に、Data-Group用の外部ファイルを保存
